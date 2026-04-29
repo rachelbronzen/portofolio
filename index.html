@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260429">
 </head>
 <body>
 
@@ -175,10 +175,85 @@
 <section id="projects">
     <h2 data-i18n="projects_title">Projects</h2>
 
+    <!-- AI Research -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 data-i18n="project_4_title">Multimodal Emotion Recognition System</h3>
+            <span class="project-date" data-i18n="project_4_date">Penelitian Tugas Akhir (Ongoing)</span>
+        </div>
+        <div class="project-category" data-i18n="project_4_category">AI Research & Data Analysis</div>
+        <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">MELD Dataset</span>
+        </div>
+        <ul class="project-description">
+            <li data-i18n="project_4_desc_1">Melakukan Exploratory Data Analysis (EDA) secara komprehensif pada dataset multimodal MELD untuk menganalisis distribusi fitur audio, teks, dan visual</li>
+            <li data-i18n="project_4_desc_2">Mengkaji dan mengimplementasikan arsitektur baseline MemoCMT untuk mengoptimalkan penyilangan (cross-modal) representasi fitur audio dan teks</li>
+            <li data-i18n="project_4_desc_3">Merancang integrasi sistem dynamic gating fusion untuk pemrosesan data visual, bertujuan menghasilkan model klasifikasi yang ringan (lightweight) dan memiliki ketahanan tinggi terhadap gangguan (noise-robust)</li>
+        </ul>
+    </div>
+    <!-- Computer Vision -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 data-i18n="project_5_title">Klasifikasi Spesies Alien Invasif</h3>
+            <span class="project-date" data-i18n="project_5_date">Kolaborasi BRIN Yogyakarta (Ongoing)</span>
+        </div>
+        <div class="project-category" data-i18n="project_5_category">Computer Vision & Object Detection</div>
+        <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">YOLO</span>
+            <span class="tech-tag">CVAT</span>
+            <span class="tech-tag">Pandas</span>
+        </div>
+        <ul class="project-description">
+            <li data-i18n="project_5_desc_1">Mengakuisisi dan memproses dataset gambar spesies alien invasif berdasarkan spesifikasi kebutuhan ekologis dari BRIN Yogyakarta</li>
+            <li data-i18n="project_5_desc_2">Melakukan anotasi presisi pada ratusan data gambar menggunakan perangkat lunak computer vision (CVAT) untuk membangun dataset training yang berkualitas</li>
+            <li data-i18n="project_5_desc_3">Melatih dan memvalidasi model Object Detection (arsitektur YOLO) untuk mengidentifikasi dan mengklasifikasikan spesies invasif secara akurat guna mendukung pemantauan keanekaragaman hayati</li>
+        </ul>
+    </div>
+    <!-- Game Development -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 data-i18n="project_6_title">Memories of You - Expert System Game Engine</h3>
+            <span class="project-date" data-i18n="project_6_date">Game Logic & Development</span>
+        </div>
+        <div class="project-category" data-i18n="project_6_category">Game Development & Expert System</div>
+        <div class="project-tech">
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">Game Engine</span>
+            <span class="tech-tag">Rule-Based System</span>
+        </div>
+        <ul class="project-description">
+            <li data-i18n="project_6_desc_1">Merancang dan mengimplementasikan Sistem Pakar (Expert System) sebagai core logic engine untuk mengatur sistem pengambilan keputusan dan progresi level pemain secara dinamis</li>
+            <li data-i18n="project_6_desc_2">Membangun algoritma berbasis aturan (rule-based) yang menganalisis interaksi pemain untuk mengklasifikasikan status emosional mereka ke dalam metrik psikologis 5 Stages of Grief</li>
+        </ul>
+    </div>
+
+    <!-- Machine Learning -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 data-i18n="project_3_title">Predictive Maintenance Analysis</h3>
+            <span class="project-date" data-i18n="project_3_date">Nov 2025 – Des 2025</span>
+        </div>
+        <div class="project-category" data-i18n="project_3_category">Machine Learning Project</div>
+        <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">CT-GAN</span>
+            <span class="tech-tag">SHAP</span>
+        </div>
+        <ul class="project-description">
+            <li data-i18n="project_3_desc_1">Menganalisis dataset sensor industri dan melakukan preprocessing serta penanganan class imbalance menggunakan CT-GAN untuk meningkatkan kualitas data pelatihan</li>
+            <li data-i18n="project_3_desc_2">Membangun dan mengevaluasi beberapa model serta mengimplementasikan Hybrid Soft Voting Ensemble untuk meningkatkan stabilitas prediksi</li>
+            <li data-i18n="project_3_desc_3">Mencapai ROC-AUC 0.9570 dan Recall 80.88%, serta menggunakan SHAP untuk menginterpretasikan kontribusi fitur utama dalam mendeteksi potensi kegagalan mesin</li>
+        </ul>
+    </div>
     <!-- Data Analytics & Dashboard -->
     <div class="project-card">
         <div class="project-header">
-            <h3 data-i18n="project_1_title">IT Performance Analytics Dashboard</h3>
+            <h3 data-i18n="project_1_title">IT Performance Analytics Dashboard (PT Pelindo) </h3>
             <span class="project-date" data-i18n="project_1_date">Sep 2025 – Des 2025</span>
         </div>
         <div class="project-category" data-i18n="project_1_category">Data Analytics & Dashboard Development</div>
@@ -215,101 +290,6 @@
         </ul>
     </div>
 
-    <!-- Machine Learning -->
-    <div class="project-card">
-        <div class="project-header">
-            <h3 data-i18n="project_3_title">Predictive Maintenance Analysis</h3>
-            <span class="project-date" data-i18n="project_3_date">Nov 2025 – Des 2025</span>
-        </div>
-        <div class="project-category" data-i18n="project_3_category">Machine Learning Project</div>
-        <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">Scikit-learn</span>
-            <span class="tech-tag">CT-GAN</span>
-            <span class="tech-tag">SHAP</span>
-        </div>
-        <ul class="project-description">
-            <li data-i18n="project_3_desc_1">Menganalisis dataset sensor industri dan melakukan preprocessing serta penanganan class imbalance menggunakan CT-GAN untuk meningkatkan kualitas data pelatihan</li>
-            <li data-i18n="project_3_desc_2">Membangun dan mengevaluasi beberapa model serta mengimplementasikan Hybrid Soft Voting Ensemble untuk meningkatkan stabilitas prediksi</li>
-            <li data-i18n="project_3_desc_3">Mencapai ROC-AUC 0.9570 dan Recall 80.88%, serta menggunakan SHAP untuk menginterpretasikan kontribusi fitur utama dalam mendeteksi potensi kegagalan mesin</li>
-        </ul>
-    </div>
-
-    <!-- AI Research -->
-    <div class="project-card">
-        <div class="project-header">
-            <h3 data-i18n="project_4_title">Multimodal Emotion Recognition System</h3>
-            <span class="project-date" data-i18n="project_4_date">Penelitian Tugas Akhir (Ongoing)</span>
-        </div>
-        <div class="project-category" data-i18n="project_4_category">AI Research & Data Analysis</div>
-        <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">Pandas</span>
-            <span class="tech-tag">PyTorch/TensorFlow</span>
-            <span class="tech-tag">MELD Dataset</span>
-        </div>
-        <ul class="project-description">
-            <li data-i18n="project_4_desc_1">Melakukan Exploratory Data Analysis (EDA) secara komprehensif pada dataset multimodal MELD untuk menganalisis distribusi fitur audio, teks, dan visual</li>
-            <li data-i18n="project_4_desc_2">Mengkaji dan mengimplementasikan arsitektur baseline MemoCMT untuk mengoptimalkan penyilangan (cross-modal) representasi fitur audio dan teks</li>
-            <li data-i18n="project_4_desc_3">Merancang integrasi sistem dynamic gating fusion untuk pemrosesan data visual, bertujuan menghasilkan model klasifikasi yang ringan (lightweight) dan memiliki ketahanan tinggi terhadap gangguan (noise-robust)</li>
-        </ul>
-    </div>
-
-    <!-- Computer Vision -->
-    <div class="project-card">
-        <div class="project-header">
-            <h3 data-i18n="project_5_title">Klasifikasi Spesies Alien Invasif</h3>
-            <span class="project-date" data-i18n="project_5_date">Kolaborasi BRIN Yogyakarta (Ongoing)</span>
-        </div>
-        <div class="project-category" data-i18n="project_5_category">Computer Vision & Object Detection</div>
-        <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">YOLO</span>
-            <span class="tech-tag">CVAT</span>
-            <span class="tech-tag">Pandas</span>
-        </div>
-        <ul class="project-description">
-            <li data-i18n="project_5_desc_1">Mengakuisisi dan memproses dataset gambar spesies alien invasif berdasarkan spesifikasi kebutuhan ekologis dari BRIN Yogyakarta</li>
-            <li data-i18n="project_5_desc_2">Melakukan anotasi presisi pada ratusan data gambar menggunakan perangkat lunak computer vision (CVAT) untuk membangun dataset training yang berkualitas</li>
-            <li data-i18n="project_5_desc_3">Melatih dan memvalidasi model Object Detection (arsitektur YOLO) untuk mengidentifikasi dan mengklasifikasikan spesies invasif secara akurat guna mendukung pemantauan keanekaragaman hayati</li>
-        </ul>
-    </div>
-
-    <!-- Game Development -->
-    <div class="project-card">
-        <div class="project-header">
-            <h3 data-i18n="project_6_title">Memories of You - Expert System Game Engine</h3>
-            <span class="project-date" data-i18n="project_6_date">Game Logic & Development</span>
-        </div>
-        <div class="project-category" data-i18n="project_6_category">Game Development & Expert System</div>
-        <div class="project-tech">
-            <span class="tech-tag">C#/Python</span>
-            <span class="tech-tag">Game Engine</span>
-            <span class="tech-tag">Rule-Based System</span>
-        </div>
-        <ul class="project-description">
-            <li data-i18n="project_6_desc_1">Merancang dan mengimplementasikan Sistem Pakar (Expert System) sebagai core logic engine untuk mengatur sistem pengambilan keputusan dan progresi level pemain secara dinamis</li>
-            <li data-i18n="project_6_desc_2">Membangun algoritma berbasis aturan (rule-based) yang menganalisis interaksi pemain untuk mengklasifikasikan status emosional mereka ke dalam metrik psikologis 5 Stages of Grief</li>
-        </ul>
-    </div>
-
-    <!-- Mobile App Backend -->
-    <div class="project-card">
-        <div class="project-header">
-            <h3 data-i18n="project_7_title">Teman Tumbuh - Android App Backend</h3>
-            <span class="project-date" data-i18n="project_7_date">Backend Development</span>
-        </div>
-        <div class="project-category" data-i18n="project_7_category">Backend API & Database Management</div>
-        <div class="project-tech">
-            <span class="tech-tag">Kotlin/Node.js/Python</span>
-            <span class="tech-tag">RESTful API</span>
-            <span class="tech-tag">Database</span>
-        </div>
-        <ul class="project-description">
-            <li data-i18n="project_7_desc_1">Mengembangkan arsitektur backend untuk aplikasi Android yang berfokus pada kalkulasi nutrisi anak guna pencegahan stunting</li>
-            <li data-i18n="project_7_desc_2">Membangun RESTful API dan sistem database untuk memproses metrik kesehatan pengguna, serta merancang logika komputasi untuk menghasilkan rekomendasi asupan makanan harian secara personal</li>
-        </ul>
-    </div>
 
     <!-- Web Platform with AI -->
     <div class="project-card">
@@ -319,14 +299,27 @@
         </div>
         <div class="project-category" data-i18n="project_8_category">Backend Development & NLP Integration</div>
         <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">Flask/FastAPI</span>
-            <span class="tech-tag">NLP</span>
-            <span class="tech-tag">XAI</span>
         </div>
         <ul class="project-description">
             <li data-i18n="project_8_desc_1">Membangun infrastruktur backend terintegrasi Artificial Intelligence untuk menganalisis dan memverifikasi kredibilitas tautan berita secara otomatis (identifikasi misinformasi/hoaks)</li>
             <li data-i18n="project_8_desc_2">Mengembangkan API yang memproses hasil prediksi model AI untuk menyajikan metrik persentase kepercayaan berita, dilengkapi dengan penjabaran sebab-akibat (XAI) guna meningkatkan transparansi bagi pengguna</li>
+        </ul>
+    </div>
+        <!-- Mobile App Backend -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 data-i18n="project_7_title">Teman Tumbuh - Android App</h3>
+            <span class="project-date" data-i18n="project_7_date">Backend Development</span>
+        </div>
+        <div class="project-category" data-i18n="project_7_category">Backend API & Database Management</div>
+        <div class="project-tech">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">RESTful API</span>
+            <span class="tech-tag">Database</span>
+        </div>
+        <ul class="project-description">
+            <li data-i18n="project_7_desc_1">Mengembangkan arsitektur backend untuk aplikasi Android yang berfokus pada kalkulasi nutrisi anak guna pencegahan stunting</li>
+            <li data-i18n="project_7_desc_2">Membangun RESTful API dan sistem database untuk memproses metrik kesehatan pengguna, serta merancang logika komputasi untuk menghasilkan rekomendasi asupan makanan harian secara personal</li>
         </ul>
     </div>
 </section>
@@ -422,7 +415,7 @@
     <p>© 2026 Rachel Bronzen</p>
 </footer>
 
-<script src="translations.js"></script>
-<script src="script.js"></script>
+<script src="translations.js?v=20260429"></script>
+<script src="script.js?v=20260429"></script>
 </body>
 </html>
