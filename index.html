@@ -11,74 +11,404 @@
 <!-- NAVBAR -->
 <nav>
     <h2>MyPortfolio</h2>
-    <ul>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-    </ul>
+    <div class="nav-right">
+        <ul>
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+            <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+            <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+        </ul>
+        <div class="language-dropdown">
+            <button id="language-switcher" class="language-switcher active-en" data-i18n="lang_button">Language</button>
+            <div class="dropdown-menu">
+                <button class="dropdown-item" data-lang="en">English</button>
+                <button class="dropdown-item" data-lang="id">Indonesia</button>
+            </div>
+        </div>
+    </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-    <h1>Hello, I'm Lala 👋</h1>
-    <p>Data Analyst & AI Engineer</p>
+    <h1 data-i18n="hero_greeting">Hello, I'm Rachel 👋</h1>
+    <p data-i18n="hero_subtitle">Data Analyst & AI Engineer</p>
+</section>
+
+<!-- PERSONAL INTRODUCTION -->
+<section id="about" class="personal-intro">
+    <h2 data-i18n="about_title">About Me</h2>
+    <div class="intro-card">
+        <h3 data-i18n="about_name">Rachel Bronzen</h3>
+        <div class="intro-details">
+            <p><strong>Asal:</strong> <span data-i18n="about_origin_value">Surabaya, Indonesia</span></p>
+            <p><strong>Status:</strong> <span data-i18n="about_status_value">Mahasiswa</span></p>
+            <p><strong>Departemen:</strong> <span data-i18n="about_department_value">Teknik Informatika</span></p>
+            <p><strong>Institut:</strong> <span data-i18n="about_institute_value">Institut Teknologi Sepuluh Nopember (ITS)</span></p>
+            <p><strong>Angkatan:</strong> <span data-i18n="about_batch_value">2023</span></p>
+            <p><strong>Semester:</strong> <span data-i18n="about_semester_value">6</span></p>
+        </div>
+    </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-    <h2>Skills</h2>
+    <h2 data-i18n="skills_title">Skills</h2>
 
-    <h3>Data Analyst</h3>
-    <div class="card-container">
-        <div class="card">Python</div>
-        <div class="card">SQL</div>
-        <div class="card">Tableau</div>
+    <!-- Common Skills -->
+    <div class="skills-category">
+        <h3 data-i18n="skills_common">Common Skills</h3>
+        <div class="skills-group">
+            <div class="skill-subsection">
+                <h4 data-i18n="skills_programming">Programming Languages</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">C</span>
+                </div>
+            </div>
+            <div class="skill-subsection">
+                <h4 data-i18n="skills_tools">Tools & Version Control</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <h3>AI Engineer</h3>
-    <div class="card-container">
-        <div class="card">Machine Learning</div>
-        <div class="card">Deep Learning</div>
-        <div class="card">NLP</div>
+    <!-- AI Engineer Skills -->
+    <div class="skills-category">
+        <h3 data-i18n="skills_ai">AI Engineer</h3>
+        <div class="skills-group">
+            <div class="skill-subsection">
+                <h4 data-i18n="skills_programming">Programming Languages</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">C++</span>
+                </div>
+            </div>
+            <div class="skill-subsection">
+                <h4 data-i18n="skills_ai_ml">AI/Machine Learning & Computer Vision</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Object Detection</span>
+                    <span class="skill-tag">Image Classification</span>
+                    <span class="skill-tag">Supervised Learning</span>
+                    <span class="skill-tag">Unsupervised Learning</span>
+                    <span class="skill-tag">Neural Networks</span>
+                    <span class="skill-tag">Data Annotation</span>
+                    <span class="skill-tag">Explainable AI (SHAP)</span>
+                    <span class="skill-tag">Model Evaluation</span>
+                </div>
+            </div>
+            <div class="skill-subsection">
+                <h4 data-i18n="skills_frameworks">Frameworks & Libraries</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">OpenCV</span>
+                    <span class="skill-tag">YOLOv11</span>
+                </div>
+            </div>
+            <div class="skill-subsection">
+                <h4>Tools & Platforms</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">CVAT</span>
+                    <span class="skill-tag">Kaggle</span>
+                    <span class="skill-tag">Google Colab</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Engineer Skills -->
+    <div class="skills-category">
+        <h3 data-i18n="skills_data">Data Engineer</h3>
+        <div class="skills-group">
+            <div class="skill-subsection">
+                <h4 data-i18n="skills_programming">Programming Languages</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">C++</span>
+                </div>
+            </div>
+            <div class="skill-subsection">
+                <h4 data-i18n="skills_data_analysis">Data Analysis & BI</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Data Exploration</span>
+                    <span class="skill-tag">ETL Pipelines</span>
+                    <span class="skill-tag">Data Warehousing</span>
+                    <span class="skill-tag">Data Quality Checking</span>
+                    <span class="skill-tag">Dashboard Development</span>
+                    <span class="skill-tag">Reporting</span>
+                </div>
+            </div>
+            <div class="skill-subsection">
+                <h4 data-i18n="skills_frameworks">Frameworks & Libraries</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">Streamlit</span>
+                </div>
+            </div>
+            <div class="skill-subsection">
+                <h4 data-i18n="skills_platforms">Tools & Platforms</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Tableau</span>
+                    <span class="skill-tag">Metabase</span>
+                    <span class="skill-tag">Apache Airflow</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-    <h2>Projects</h2>
+    <h2 data-i18n="projects_title">Projects</h2>
 
-    <h3>Data Analyst</h3>
-    <div class="card-container">
-        <div class="card">
-            <h4>Sales Dashboard</h4>
-            <p>Visualization using Tableau</p>
+    <!-- Data Analytics & Dashboard -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 data-i18n="project_1_title">IT Performance Analytics Dashboard</h3>
+            <span class="project-date" data-i18n="project_1_date">Sep 2025 – Des 2025</span>
         </div>
+        <div class="project-category" data-i18n="project_1_category">Data Analytics & Dashboard Development</div>
+        <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">Excel</span>
+        </div>
+        <ul class="project-description">
+            <li data-i18n="project_1_desc_1">Mengganti proses pelaporan manual berbasis Excel dengan pipeline analisis data menggunakan Python dan Pandas untuk mengolah ribuan data tiket Incident dan Request</li>
+            <li data-i18n="project_1_desc_2">Mengimplementasikan logika perhitungan otomatis SLA dan Time Breach berdasarkan matriks Business Criticality dan Severity untuk meningkatkan akurasi evaluasi kinerja IT</li>
+            <li data-i18n="project_1_desc_3">Mengembangkan dashboard interaktif berbasis Streamlit untuk monitoring SLA compliance dan tren performa layanan, sehingga mempercepat pelaporan dan mendukung identifikasi bottleneck secara strategis</li>
+        </ul>
     </div>
 
-    <h3>AI Engineer</h3>
-    <div class="card-container">
-        <div class="card">
-            <h4>Emotion Detection</h4>
-            <p>Using Deep Learning</p>
+    <!-- Decision Support System -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 data-i18n="project_2_title">Sistem Pakar Rekomendasi Laptop</h3>
+            <span class="project-date" data-i18n="project_2_date">Sep 2025 – Des 2025</span>
         </div>
+        <div class="project-category" data-i18n="project_2_category">Decision Support System</div>
+        <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">Selenium</span>
+        </div>
+        <ul class="project-description">
+            <li data-i18n="project_2_desc_1">Mengembangkan sistem pendukung keputusan berbasis web dengan metode Hybrid (Forward Chaining untuk rule-based filtering dan SAW untuk weighted ranking) guna menerjemahkan kebutuhan pengguna menjadi rekomendasi spesifikasi laptop yang terukur</li>
+            <li data-i18n="project_2_desc_2">Mengotomatisasi pengumpulan dan pembaruan dataset melalui web scraping terjadwal, serta melakukan data cleaning dan pembentukan matriks keputusan menggunakan Pandas</li>
+            <li data-i18n="project_2_desc_3">Mengimplementasikan fitur Explainable AI dan validasi anggaran pengguna untuk meningkatkan transparansi rekomendasi, serta mendeploy sistem agar dapat digunakan secara interaktif</li>
+        </ul>
+    </div>
+
+    <!-- Machine Learning -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 data-i18n="project_3_title">Predictive Maintenance Analysis</h3>
+            <span class="project-date" data-i18n="project_3_date">Nov 2025 – Des 2025</span>
+        </div>
+        <div class="project-category" data-i18n="project_3_category">Machine Learning Project</div>
+        <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">CT-GAN</span>
+            <span class="tech-tag">SHAP</span>
+        </div>
+        <ul class="project-description">
+            <li data-i18n="project_3_desc_1">Menganalisis dataset sensor industri dan melakukan preprocessing serta penanganan class imbalance menggunakan CT-GAN untuk meningkatkan kualitas data pelatihan</li>
+            <li data-i18n="project_3_desc_2">Membangun dan mengevaluasi beberapa model serta mengimplementasikan Hybrid Soft Voting Ensemble untuk meningkatkan stabilitas prediksi</li>
+            <li data-i18n="project_3_desc_3">Mencapai ROC-AUC 0.9570 dan Recall 80.88%, serta menggunakan SHAP untuk menginterpretasikan kontribusi fitur utama dalam mendeteksi potensi kegagalan mesin</li>
+        </ul>
+    </div>
+
+    <!-- AI Research -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 data-i18n="project_4_title">Multimodal Emotion Recognition System</h3>
+            <span class="project-date" data-i18n="project_4_date">Penelitian Tugas Akhir (Ongoing)</span>
+        </div>
+        <div class="project-category" data-i18n="project_4_category">AI Research & Data Analysis</div>
+        <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">PyTorch/TensorFlow</span>
+            <span class="tech-tag">MELD Dataset</span>
+        </div>
+        <ul class="project-description">
+            <li data-i18n="project_4_desc_1">Melakukan Exploratory Data Analysis (EDA) secara komprehensif pada dataset multimodal MELD untuk menganalisis distribusi fitur audio, teks, dan visual</li>
+            <li data-i18n="project_4_desc_2">Mengkaji dan mengimplementasikan arsitektur baseline MemoCMT untuk mengoptimalkan penyilangan (cross-modal) representasi fitur audio dan teks</li>
+            <li data-i18n="project_4_desc_3">Merancang integrasi sistem dynamic gating fusion untuk pemrosesan data visual, bertujuan menghasilkan model klasifikasi yang ringan (lightweight) dan memiliki ketahanan tinggi terhadap gangguan (noise-robust)</li>
+        </ul>
+    </div>
+
+    <!-- Computer Vision -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 data-i18n="project_5_title">Klasifikasi Spesies Alien Invasif</h3>
+            <span class="project-date" data-i18n="project_5_date">Kolaborasi BRIN Yogyakarta (Ongoing)</span>
+        </div>
+        <div class="project-category" data-i18n="project_5_category">Computer Vision & Object Detection</div>
+        <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">YOLO</span>
+            <span class="tech-tag">CVAT</span>
+            <span class="tech-tag">Pandas</span>
+        </div>
+        <ul class="project-description">
+            <li data-i18n="project_5_desc_1">Mengakuisisi dan memproses dataset gambar spesies alien invasif berdasarkan spesifikasi kebutuhan ekologis dari BRIN Yogyakarta</li>
+            <li data-i18n="project_5_desc_2">Melakukan anotasi presisi pada ratusan data gambar menggunakan perangkat lunak computer vision (CVAT) untuk membangun dataset training yang berkualitas</li>
+            <li data-i18n="project_5_desc_3">Melatih dan memvalidasi model Object Detection (arsitektur YOLO) untuk mengidentifikasi dan mengklasifikasikan spesies invasif secara akurat guna mendukung pemantauan keanekaragaman hayati</li>
+        </ul>
+    </div>
+
+    <!-- Game Development -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 data-i18n="project_6_title">Memories of You - Expert System Game Engine</h3>
+            <span class="project-date" data-i18n="project_6_date">Game Logic & Development</span>
+        </div>
+        <div class="project-category" data-i18n="project_6_category">Game Development & Expert System</div>
+        <div class="project-tech">
+            <span class="tech-tag">C#/Python</span>
+            <span class="tech-tag">Game Engine</span>
+            <span class="tech-tag">Rule-Based System</span>
+        </div>
+        <ul class="project-description">
+            <li data-i18n="project_6_desc_1">Merancang dan mengimplementasikan Sistem Pakar (Expert System) sebagai core logic engine untuk mengatur sistem pengambilan keputusan dan progresi level pemain secara dinamis</li>
+            <li data-i18n="project_6_desc_2">Membangun algoritma berbasis aturan (rule-based) yang menganalisis interaksi pemain untuk mengklasifikasikan status emosional mereka ke dalam metrik psikologis 5 Stages of Grief</li>
+        </ul>
+    </div>
+
+    <!-- Mobile App Backend -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 data-i18n="project_7_title">Teman Tumbuh - Android App Backend</h3>
+            <span class="project-date" data-i18n="project_7_date">Backend Development</span>
+        </div>
+        <div class="project-category" data-i18n="project_7_category">Backend API & Database Management</div>
+        <div class="project-tech">
+            <span class="tech-tag">Kotlin/Node.js/Python</span>
+            <span class="tech-tag">RESTful API</span>
+            <span class="tech-tag">Database</span>
+        </div>
+        <ul class="project-description">
+            <li data-i18n="project_7_desc_1">Mengembangkan arsitektur backend untuk aplikasi Android yang berfokus pada kalkulasi nutrisi anak guna pencegahan stunting</li>
+            <li data-i18n="project_7_desc_2">Membangun RESTful API dan sistem database untuk memproses metrik kesehatan pengguna, serta merancang logika komputasi untuk menghasilkan rekomendasi asupan makanan harian secara personal</li>
+        </ul>
+    </div>
+
+    <!-- Web Platform with AI -->
+    <div class="project-card">
+        <div class="project-header">
+            <h3 data-i18n="project_8_title">XenoTimes - News Credibility Verification Platform</h3>
+            <span class="project-date" data-i18n="project_8_date">Backend & AI Integration</span>
+        </div>
+        <div class="project-category" data-i18n="project_8_category">Backend Development & NLP Integration</div>
+        <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask/FastAPI</span>
+            <span class="tech-tag">NLP</span>
+            <span class="tech-tag">XAI</span>
+        </div>
+        <ul class="project-description">
+            <li data-i18n="project_8_desc_1">Membangun infrastruktur backend terintegrasi Artificial Intelligence untuk menganalisis dan memverifikasi kredibilitas tautan berita secara otomatis (identifikasi misinformasi/hoaks)</li>
+            <li data-i18n="project_8_desc_2">Mengembangkan API yang memproses hasil prediksi model AI untuk menyajikan metrik persentase kepercayaan berita, dilengkapi dengan penjabaran sebab-akibat (XAI) guna meningkatkan transparansi bagi pengguna</li>
+        </ul>
     </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
-    <h2>Experience</h2>
-    <div class="card-container">
-        <div class="card">
-            <h4>Intern Data Analyst</h4>
-            <p>Company XYZ (2024)</p>
+    <h2 data-i18n="experience_title">Experience</h2>
+
+    <!-- Lab Admin -->
+    <div class="experience-card">
+        <div class="experience-header">
+            <h3 data-i18n="exp_1_title">Admin Laboratorium Manajemen Cerdas Informasi</h3>
+            <span class="experience-date" data-i18n="exp_1_date">Juni 2025 – Sekarang</span>
         </div>
+        <div class="experience-org" data-i18n="exp_1_org">Teknik Informatika, Institut Teknologi Sepuluh Nopember (ITS), Surabaya, Indonesia</div>
+        <ul class="experience-description">
+            <li data-i18n="exp_1_desc_1">Mendukung pengembangan proyek website pengabdian masyarakat bersama dosen dan tim mahasiswa</li>
+            <li data-i18n="exp_1_desc_2">Mengelola koordinasi proyek antara dosen, mahasiswa, dan pihak eksternal</li>
+            <li data-i18n="exp_1_desc_3">Mempresentasikan dan memperkenalkan proyek Lab MCI kepada mahasiswa dan mitra eksternal</li>
+        </ul>
+    </div>
+
+    <!-- Data Analyst Intern -->
+    <div class="experience-card">
+        <div class="experience-header">
+            <h3 data-i18n="exp_2_title">Data Analyst Internship</h3>
+            <span class="experience-date" data-i18n="exp_2_date">September 2025 – Desember 2025</span>
+        </div>
+        <div class="experience-org" data-i18n="exp_2_org">PT. Pelabuhan Indonesia (Persero) Regional 3, Surabaya, Indonesia</div>
+        <ul class="experience-description">
+            <li data-i18n="exp_2_desc_1">Mengolah ribuan data tiket incident dan request menggunakan Python untuk proses cleaning, transformasi, dan analisis SLA</li>
+            <li data-i18n="exp_2_desc_2">Mengembangkan dasbor interaktif berbasis Streamlit untuk monitoring SLA dan tren performa layanan</li>
+            <li data-i18n="exp_2_desc_3">Mengotomatisasi proses pelaporan bulanan yang sebelumnya manual berbasis Excel sehingga meningkatkan efisiensi dan akurasi analisis</li>
+        </ul>
+    </div>
+
+    <!-- Teaching Assistant - Database -->
+    <div class="experience-card">
+        <div class="experience-header">
+            <h3 data-i18n="exp_3_title">Asisten Dosen Sistem Basis Data</h3>
+            <span class="experience-date" data-i18n="exp_3_date">September 2025 – Desember 2025</span>
+        </div>
+        <div class="experience-org" data-i18n="exp_3_org">Teknik Informatika, Institut Teknologi Sepuluh Nopember (ITS), Surabaya, Indonesia</div>
+        <ul class="experience-description">
+            <li data-i18n="exp_3_desc_1">Menyampaikan materi kuliah untuk mendukung pemahaman konsep basis data dan pengerjaan praktikum</li>
+            <li data-i18n="exp_3_desc_2">Membimbing mahasiswa dalam implementasi query SQL dan perancangan skema database</li>
+            <li data-i18n="exp_3_desc_3">Melakukan penilaian tugas, praktikum, dan evaluasi performa akademik mahasiswa</li>
+        </ul>
+    </div>
+
+    <!-- Teaching Assistant - Networks -->
+    <div class="experience-card">
+        <div class="experience-header">
+            <h3 data-i18n="exp_4_title">Asisten Dosen Jaringan Komputer</h3>
+            <span class="experience-date" data-i18n="exp_4_date">September 2025 – Desember 2025</span>
+        </div>
+        <div class="experience-org" data-i18n="exp_4_org">Teknik Informatika, Institut Teknologi Sepuluh Nopember (ITS), Surabaya, Indonesia</div>
+        <ul class="experience-description">
+            <li data-i18n="exp_4_desc_1">Menyampaikan materi kuliah untuk mendukung pemahaman konsep jaringan komputer dan pengerjaan praktikum</li>
+            <li data-i18n="exp_4_desc_2">Membimbing mahasiswa dalam implementasi protokol jaringan dan konfigurasi sistem jaringan</li>
+            <li data-i18n="exp_4_desc_3">Melakukan penilaian tugas, praktikum, dan evaluasi performa akademik mahasiswa</li>
+        </ul>
+    </div>
+
+    <!-- External Affairs Position -->
+    <div class="experience-card">
+        <div class="experience-header">
+            <h3 data-i18n="exp_5_title">Kepala Biro External, Departemen External Affairs</h3>
+            <span class="experience-date" data-i18n="exp_5_date">Februari 2025 – Desember 2025</span>
+        </div>
+        <div class="experience-org" data-i18n="exp_5_org">Himpunan Mahasiswa Teknik Computer-Informatika (HMTC) ITS, Surabaya, Indonesia</div>
+        <ul class="experience-description">
+            <li data-i18n="exp_5_desc_1">Menginisiasi dan mengembangkan konsep kerja sama eksternal untuk mendukung kegiatan organisasi</li>
+            <li data-i18n="exp_5_desc_2">Menyusun proposal kemitraan dan melakukan komunikasi dengan pihak eksternal</li>
+            <li data-i18n="exp_5_desc_3">Mengelola tim dalam pelaksanaan program kolaborasi</li>
+        </ul>
     </div>
 </section>
 
 <!-- GALLERY -->
 <section id="gallery">
-    <h2>Gallery</h2>
+    <h2 data-i18n="gallery_title">Gallery</h2>
     <div class="gallery">
         <div class="gallery-item">
             <img src="assets/images/photo1.jpg" alt="">
@@ -89,8 +419,10 @@
 </section>
 
 <footer>
-    <p>© 2026 Lala</p>
+    <p>© 2026 Rachel Bronzen</p>
 </footer>
 
+<script src="translations.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
