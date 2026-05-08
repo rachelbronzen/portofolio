@@ -1,6 +1,5 @@
 const translations = {
     id: {
-        // Navigation
         lang_button: "Bahasa",
         nav_about: "Tentang",
         nav_skills: "Keahlian",
@@ -8,11 +7,9 @@ const translations = {
         nav_experience: "Pengalaman",
         nav_gallery: "Galeri",
         
-        // Hero
         hero_greeting: "Halo, Saya Rachel 👋",
         hero_subtitle: "Data Analyst & AI Engineer",
         
-        // About
         about_title: "Tentang Saya",
         about_name: "Rachel Bronzen",
         about_origin: "Asal",
@@ -28,7 +25,6 @@ const translations = {
         about_semester: "Semester",
         about_semester_value: "6",
         
-        // Skills
         skills_title: "Keahlian",
         skills_common: "Keahlian Umum",
         skills_programming: "Bahasa Pemrograman",
@@ -37,10 +33,9 @@ const translations = {
         skills_ai_ml: "AI/Machine Learning & Computer Vision",
         skills_frameworks: "Frameworks & Libraries",
         skills_platforms: "Tools & Platforms",
-        skills_data: "Data Engineer",
+        skills_data: "Data Analyst",
         skills_data_analysis: "Data Analysis & BI",
         
-        // Projects
         projects_title: "Proyek",
         project_1_title: "IT Performance Analytics Dashboard",
         project_1_date: "September 2025 – Desember 2025",
@@ -52,50 +47,52 @@ const translations = {
         project_2_title: "Sistem Pakar Rekomendasi Laptop",
         project_2_date: "September 2025 – Desember 2025",
         project_2_category: "Decision Support System",
-        project_2_desc_1: "Mengembangkan sistem pendukung keputusan berbasis web dengan metode Hybrid (Forward Chaining untuk rule-based filtering dan SAW untuk weighted ranking) guna menerjemahkan kebutuhan pengguna menjadi rekomendasi spesifikasi laptop yang terukur",
+        project_2_desc_1: "Mengembangkan sistem pendukung keputusan berbasis web dengan metode hybrid (Forward Chaining untuk rule-based filtering dan SAW untuk weighted ranking) guna menerjemahkan kebutuhan pengguna menjadi rekomendasi spesifikasi laptop yang terukur",
         project_2_desc_2: "Mengotomatisasi pengumpulan dan pembaruan dataset melalui web scraping terjadwal, serta melakukan data cleaning dan pembentukan matriks keputusan menggunakan Pandas",
-        project_2_desc_3: "Mengimplementasikan fitur Explainable AI dan validasi anggaran pengguna untuk meningkatkan transparansi rekomendasi, serta mendeploy sistem agar dapat digunakan secara interaktif",
+        project_2_desc_3: "Mengimplementasikan fitur explainable AI dan validasi anggaran pengguna untuk meningkatkan transparansi rekomendasi, serta mendeploy sistem agar dapat digunakan secara interaktif",
         
         project_3_title: "Predictive Maintenance Analysis",
         project_3_date: "November 2025 – Desember 2025",
         project_3_category: "Machine Learning Project",
         project_3_desc_1: "Menganalisis dataset sensor industri dan melakukan preprocessing serta penanganan class imbalance menggunakan CT-GAN untuk meningkatkan kualitas data pelatihan",
-        project_3_desc_2: "Membangun dan mengevaluasi beberapa model serta mengimplementasikan Hybrid Soft Voting Ensemble untuk meningkatkan stabilitas prediksi",
+        project_3_desc_2: "Membangun dan mengevaluasi beberapa model serta mengimplementasikan hybrid soft voting ensemble untuk meningkatkan stabilitas prediksi",
         project_3_desc_3: "Mencapai ROC-AUC 0.9570 dan Recall 80.88%, serta menggunakan SHAP untuk menginterpretasikan kontribusi fitur utama dalam mendeteksi potensi kegagalan mesin",
         
         project_4_title: "Multimodal Emotion Recognition System",
-        project_4_date: "Penelitian Tugas Akhir (Ongoing)",
+        project_4_date: "Penelitian Tugas Akhir (Februari 2026 - Sekarang)",
         project_4_category: "AI Research & Data Analysis",
-        project_4_desc_1: "Melakukan Exploratory Data Analysis (EDA) secara komprehensif pada dataset multimodal MELD untuk menganalisis distribusi fitur audio, teks, dan visual",
+        project_4_desc_1: "Melakukan eksplorasi data secara komprehensif pada dataset multimodal MELD untuk menganalisis distribusi fitur audio, teks, dan visual",
         project_4_desc_2: "Mengkaji dan mengimplementasikan arsitektur baseline MemoCMT untuk mengoptimalkan penyilangan (cross-modal) representasi fitur audio dan teks",
-        project_4_desc_3: "Merancang integrasi sistem dynamic gating fusion untuk pemrosesan data visual, bertujuan menghasilkan model klasifikasi yang ringan (lightweight) dan memiliki ketahanan tinggi terhadap gangguan (noise-robust)",
+        project_4_desc_3: "Merancang integrasi sistem dynamic gating fusion untuk pemrosesan data visual, bertujuan menghasilkan model klasifikasi yang ringan dan memiliki ketahanan tinggi terhadap gangguan",
         
-        project_5_title: "Klasifikasi Spesies Alien Invasif",
-        project_5_date: "Kolaborasi BRIN Yogyakarta (Ongoing)",
+        project_5_title: "Klasifikasi Spesies Alien Invasif Taman Baluran",
+        project_5_date: "Februari 2026 - Sekarang",
         project_5_category: "Computer Vision & Object Detection",
         project_5_desc_1: "Mengakuisisi dan memproses dataset gambar spesies alien invasif berdasarkan spesifikasi kebutuhan ekologis dari BRIN Yogyakarta",
-        project_5_desc_2: "Melakukan anotasi presisi pada ratusan data gambar menggunakan perangkat lunak computer vision (CVAT) untuk membangun dataset training yang berkualitas",
-        project_5_desc_3: "Melatih dan memvalidasi model Object Detection (arsitektur YOLO) untuk mengidentifikasi dan mengklasifikasikan spesies invasif secara akurat guna mendukung pemantauan keanekaragaman hayati",
+        project_5_desc_2: "Melakukan anotasi presisi pada ratusan data gambar menggunakan perangkat lunak computer vision untuk membangun dataset training yang berkualitas",
+        project_5_desc_3: "Melatih dan memvalidasi model object detection untuk mengidentifikasi dan mengklasifikasikan spesies invasif secara akurat guna mendukung pemantauan keanekaragaman hayati",
         
         project_6_title: "Memories of You - Expert System Game Engine",
-        project_6_date: "Game Logic & Development",
+        project_6_date: "Desember 2026 - Sekarang",
         project_6_category: "Game Development & Expert System",
-        project_6_desc_1: "Merancang dan mengimplementasikan Sistem Pakar (Expert System) sebagai core logic engine untuk mengatur sistem pengambilan keputusan dan progresi level pemain secara dinamis",
-        project_6_desc_2: "Membangun algoritma berbasis aturan (rule-based) yang menganalisis interaksi pemain untuk mengklasifikasikan status emosional mereka ke dalam metrik psikologis 5 Stages of Grief",
+        project_6_desc_1: "Merancang dan mengimplementasikan sistem pakar sebagai core logic engine untuk mengatur sistem pengambilan keputusan dan progresi level pemain secara dinamis",
+        project_6_desc_2: "Membangun algoritma berbasis aturan yang menganalisis interaksi pemain untuk mengklasifikasikan status emosional mereka ke dalam metrik psikologis 5 Stages of Grief",
         
-        project_7_title: "Teman Tumbuh - Android App Backend",
-        project_7_date: "Backend Development",
+        project_7_title: "Teman Tumbuh - Android App",
+        project_7_date: "Maret 2025 – Juni 2025",
         project_7_category: "Backend API & Database Management",
-        project_7_desc_1: "Mengembangkan arsitektur backend untuk aplikasi Android yang berfokus pada kalkulasi nutrisi anak guna pencegahan stunting",
-        project_7_desc_2: "Membangun RESTful API dan sistem database untuk memproses metrik kesehatan pengguna, serta merancang logika komputasi untuk menghasilkan rekomendasi asupan makanan harian secara personal",
+        project_7_desc_1: "Mengembangkan backend aplikasi monitoring nutrisi anak untuk mendukung pengelolaan data kesehatan dan rekomendasi makanan harian",
+        project_7_desc_2: "Membangun dan mengelola REST API menggunakan Next.js dan Prisma ORM untuk autentikasi, pengolahan data pengguna, serta integrasi database PostgreSQL",
+        project_7_desc_3: "Melakukan pengujian endpoint API menggunakan Postman serta mengimplementasikan fitur login, register, logout, dan manajemen data aplikasi",
         
         project_8_title: "XenoTimes - News Credibility Verification Platform",
-        project_8_date: "Backend & AI Integration",
+        project_8_date: "September 2025 – Desember 2025",
         project_8_category: "Backend Development & NLP Integration",
-        project_8_desc_1: "Membangun infrastruktur backend terintegrasi Artificial Intelligence untuk menganalisis dan memverifikasi kredibilitas tautan berita secara otomatis (identifikasi misinformasi/hoaks)",
-        project_8_desc_2: "Mengembangkan API yang memproses hasil prediksi model AI untuk menyajikan metrik persentase kepercayaan berita, dilengkapi dengan penjabaran sebab-akibat (XAI) guna meningkatkan transparansi bagi pengguna",
-        
-        // Experience
+        project_8_desc_1: "Mengelola database menggunakan Supabase PostgreSQL dan Prisma ORM untuk autentikasi serta penyimpanan data aplikasi",
+        project_8_desc_2: "Mengimplementasikan web scraping otomatis menggunakan Playwright untuk mengekstraksi konten berita dari berbagai website",
+        project_8_desc_3: "Melakukan pengujian endpoint API menggunakan Postman untuk memastikan stabilitas dan akurasi response backend",
+
+
         experience_title: "Pengalaman",
         exp_1_title: "Admin Laboratorium Manajemen Cerdas Informasi",
         exp_1_date: "Juni 2025 – Sekarang",
@@ -132,14 +129,11 @@ const translations = {
         exp_5_desc_2: "Menyusun proposal kemitraan dan melakukan komunikasi dengan pihak eksternal",
         exp_5_desc_3: "Mengelola tim dalam pelaksanaan program kolaborasi",
         
-        // Gallery
         gallery_title: "Galeri",
         
-        // Footer
-        footer_copyright: "© 2026 Lala",
+        footer_copyright: "© 2026 Rachel Bronzen",
     },
     en: {
-        // Navigation
         lang_button: "Language",
         nav_about: "About",
         nav_skills: "Skills",
@@ -147,11 +141,9 @@ const translations = {
         nav_experience: "Experience",
         nav_gallery: "Gallery",
         
-        // Hero
         hero_greeting: "Hello, I'm Rachel 👋",
         hero_subtitle: "Data Analyst & AI Engineer",
         
-        // About
         about_title: "About Me",
         about_name: "Rachel Bronzen",
         about_origin: "Origin",
@@ -159,7 +151,7 @@ const translations = {
         about_status: "Status",
         about_status_value: "Student",
         about_department: "Department",
-        about_department_value: "Information Technology",
+        about_department_value: "Informatics Engineering",
         about_institute: "Institute",
         about_institute_value: "Institut Teknologi Sepuluh Nopember (ITS)",
         about_batch: "Batch",
@@ -167,7 +159,6 @@ const translations = {
         about_semester: "Semester",
         about_semester_value: "6",
         
-        // Skills
         skills_title: "Skills",
         skills_common: "Common Skills",
         skills_programming: "Programming Languages",
@@ -176,10 +167,9 @@ const translations = {
         skills_ai_ml: "AI/Machine Learning & Computer Vision",
         skills_frameworks: "Frameworks & Libraries",
         skills_platforms: "Tools & Platforms",
-        skills_data: "Data Engineer",
+        skills_data: "Data Analyst",
         skills_data_analysis: "Data Analysis & BI",
         
-        // Projects
         projects_title: "Projects",
         project_1_title: "IT Performance Analytics Dashboard",
         project_1_date: "September 2025 – December 2025",
@@ -203,50 +193,51 @@ const translations = {
         project_3_desc_3: "Achieved ROC-AUC 0.9570 and Recall 80.88%, and used SHAP to interpret contributions of key features in detecting potential machine failures",
         
         project_4_title: "Multimodal Emotion Recognition System",
-        project_4_date: "Thesis Research (Ongoing)",
+        project_4_date: "Thesis Research (February 2026 - Present)",
         project_4_category: "AI Research & Data Analysis",
         project_4_desc_1: "Conducted comprehensive Exploratory Data Analysis (EDA) on MELD multimodal dataset to analyze distribution of audio, text, and visual features",
         project_4_desc_2: "Examined and implemented MemoCMT baseline architecture to optimize cross-modal representation of audio and text features",
         project_4_desc_3: "Designed dynamic gating fusion system integration for visual data processing, aiming to produce lightweight classification models with high noise robustness",
         
-        project_5_title: "Invasive Alien Species Classification",
-        project_5_date: "BRIN Yogyakarta Collaboration (Ongoing)",
+        project_5_title: "Invasive Alien Species Classification of Baluran National Park",
+        project_5_date: "February 2026 - Present",
         project_5_category: "Computer Vision & Object Detection",
         project_5_desc_1: "Acquired and processed invasive species image dataset based on ecological requirements specifications from BRIN Yogyakarta",
         project_5_desc_2: "Performed precise annotation on hundreds of images using computer vision software (CVAT) to build quality training dataset",
         project_5_desc_3: "Trained and validated Object Detection model (YOLO architecture) to accurately identify and classify invasive species to support biodiversity monitoring",
         
         project_6_title: "Memories of You - Expert System Game Engine",
-        project_6_date: "Game Logic & Development",
+        project_6_date: "December 2026 - Present",
         project_6_category: "Game Development & Expert System",
         project_6_desc_1: "Designed and implemented Expert System as core logic engine to manage player decision-making systems and level progression dynamically",
         project_6_desc_2: "Built rule-based algorithm that analyzes player interactions to classify their emotional status into 5 Stages of Grief psychological metrics",
         
-        project_7_title: "Teman Tumbuh - Android App Backend",
-        project_7_date: "Backend Development",
+        project_7_title: "Teman Tumbuh - Android App",
+        project_7_date: "March 2025 – June 2025",
         project_7_category: "Backend API & Database Management",
-        project_7_desc_1: "Developed backend architecture for Android application focused on child nutrition calculation for stunting prevention",
-        project_7_desc_2: "Built RESTful API and database system to process user health metrics, and designed computation logic to generate personalized daily food intake recommendations",
+        project_7_desc_1: "Developed backend application for monitoring child nutrition to support health data management and daily food intake recommendations",
+        project_7_desc_2: "Built and managed REST API using Next.js and Prisma ORM for authentication, user data processing, and PostgreSQL database integration",
+        project_7_desc_3: "Performed API endpoint testing using Postman and implemented login, register, logout, and application data management features",
         
         project_8_title: "XenoTimes - News Credibility Verification Platform",
-        project_8_date: "Backend & AI Integration",
+        project_8_date: "September 2025 – December 2025",
         project_8_category: "Backend Development & NLP Integration",
-        project_8_desc_1: "Built AI-integrated backend infrastructure to automatically analyze and verify news link credibility (misinformation/hoax identification)",
-        project_8_desc_2: "Developed API that processes AI model prediction results to present news trust percentage metrics, equipped with cause-effect explanation (XAI) to improve user transparency",
+        project_8_desc_1: "Managed database using Supabase PostgreSQL and Prisma ORM for authentication and application data storage",
+        project_8_desc_2: "Implemented automatic web scraping using Playwright to extract news content from various websites",
+        project_8_desc_3: "Performed API endpoint testing using Postman to ensure backend stability and response accuracy",
         
-        // Experience
         experience_title: "Experience",
-        exp_1_title: "Information Intelligent Management Laboratory Administrator",
+        exp_1_title: "Information Intelligent Management Lab Administrator",
         exp_1_date: "June 2025 – Present",
         exp_1_org: "Informatics Engineering, Institut Teknologi Sepuluh Nopember (ITS), Surabaya, Indonesia",
         exp_1_desc_1: "Supported development of community service website project together with faculty and student team",
-        exp_1_desc_2: "Managed project coordination between faculty, students, and external parties",
+        exp_1_desc_2: "Managed project coordination among faculty, students, and external stakeholders",
         exp_1_desc_3: "Presented and introduced Lab MCI project to students and external partners",
         
         exp_2_title: "Data Analyst Intern",
         exp_2_date: "September 2025 – December 2025",
         exp_2_org: "PT. Pelabuhan Indonesia (Persero) Regional 3, Surabaya, Indonesia",
-        exp_2_desc_1: "Processed thousands of Incident and Request tickets using Python for cleaning, transformation, and SLA analysis",
+        exp_2_desc_1: "Processed thousands of Incident and Request tickets using Python for data cleaning, transformation, and SLA analysis",
         exp_2_desc_2: "Developed interactive Streamlit-based dashboard for SLA monitoring and service performance trends",
         exp_2_desc_3: "Automated monthly reporting process that was previously manual Excel-based, improving efficiency and analysis accuracy",
         
@@ -270,11 +261,9 @@ const translations = {
         exp_5_desc_1: "Initiated and developed external cooperation concepts to support organizational activities",
         exp_5_desc_2: "Prepared partnership proposals and communicated with external parties",
         exp_5_desc_3: "Managed team in implementing collaboration programs",
-        
-        // Gallery
+
         gallery_title: "Gallery",
-        
-        // Footer
-        footer_copyright: "© 2026 Lala",
+
+        footer_copyright: "© 2026 Rachel Bronzen",
     }
 };

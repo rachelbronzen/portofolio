@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav>
     <h2>MyPortfolio</h2>
     <div class="nav-right">
@@ -29,13 +28,11 @@
     </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
     <h1 data-i18n="hero_greeting">Hello, I'm Rachel 👋</h1>
     <p data-i18n="hero_subtitle">Data Analyst & AI Engineer</p>
 </section>
 
-<!-- PERSONAL INTRODUCTION -->
 <section id="about" class="personal-intro">
     <h2 data-i18n="about_title">About Me</h2>
     <div class="intro-card">
@@ -47,6 +44,11 @@
             <p><strong>Institut:</strong> <span data-i18n="about_institute_value">Institut Teknologi Sepuluh Nopember (ITS)</span></p>
             <p><strong>Angkatan:</strong> <span data-i18n="about_batch_value">2023</span></p>
             <p><strong>Semester:</strong> <span data-i18n="about_semester_value">6</span></p>
+        </div>
+        <div class="contact-links" aria-label="Contact links">
+            <a class="contact-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=rachel.bronzen@gmail.com" target="_blank" rel="noreferrer noopener">Email</a>
+            <a class="contact-link" href="https://github.com/rachelbronzen" target="_blank" rel="noreferrer noopener">GitHub</a>
+            <a class="contact-link" href="https://www.linkedin.com/in/rachelbronzen" target="_blank" rel="noreferrer noopener">LinkedIn</a>
         </div>
     </div>
 </section>
@@ -62,10 +64,15 @@
             <div class="skill-subsection">
                 <h4 data-i18n="skills_programming">Programming Languages</h4>
                 <div class="skill-tags">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">C++</span>
                     <span class="skill-tag">C</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Go</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">JavaScript</span>
+                    
                 </div>
             </div>
             <div class="skill-subsection">
@@ -87,7 +94,6 @@
                 <div class="skill-tags">
                     <span class="skill-tag">Python</span>
                     <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">C++</span>
                 </div>
             </div>
             <div class="skill-subsection">
@@ -111,7 +117,8 @@
                     <span class="skill-tag">Scikit-learn</span>
                     <span class="skill-tag">PyTorch</span>
                     <span class="skill-tag">OpenCV</span>
-                    <span class="skill-tag">YOLOv11</span>
+                    <span class="skill-tag">Ultralytics YOLO</span>
+                    <span class="skill-tag">Matplotlib</span>
                 </div>
             </div>
             <div class="skill-subsection">
@@ -128,23 +135,27 @@
 
     <!-- Data Engineer Skills -->
     <div class="skills-category">
-        <h3 data-i18n="skills_data">Data Engineer</h3>
+        <h3 data-i18n="skills_data">Data Analyst</h3>
         <div class="skills-group">
             <div class="skill-subsection">
                 <h4 data-i18n="skills_programming">Programming Languages</h4>
                 <div class="skill-tags">
                     <span class="skill-tag">Python</span>
                     <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">JavaScript</span>
                 </div>
             </div>
             <div class="skill-subsection">
                 <h4 data-i18n="skills_data_analysis">Data Analysis & BI</h4>
                 <div class="skill-tags">
+                    <span class="skill-tag">Data Cleaning</span>
                     <span class="skill-tag">Data Exploration</span>
+                    <span class="skill-tag">Data Visualization</span>
                     <span class="skill-tag">ETL Pipelines</span>
                     <span class="skill-tag">Data Warehousing</span>
+                    <span class="skill-tag">Data Processing</span>
                     <span class="skill-tag">Data Quality Checking</span>
+                    <span class="skill-tag">Workflow Automation</span>
                     <span class="skill-tag">Dashboard Development</span>
                     <span class="skill-tag">Reporting</span>
                 </div>
@@ -154,6 +165,8 @@
                 <div class="skill-tags">
                     <span class="skill-tag">Pandas</span>
                     <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Matplotlib</span>
+                    <span class="skill-tag">Seaborn</span>
                     <span class="skill-tag">Scikit-learn</span>
                     <span class="skill-tag">Streamlit</span>
                 </div>
@@ -161,9 +174,11 @@
             <div class="skill-subsection">
                 <h4 data-i18n="skills_platforms">Tools & Platforms</h4>
                 <div class="skill-tags">
+                    <span class="skill-tag">Docker</span>
                     <span class="skill-tag">Tableau</span>
-                    <span class="skill-tag">Metabase</span>
                     <span class="skill-tag">Apache Airflow</span>
+                    <span class="skill-tag">Metabase</span>
+                    <span class="skill-tag">PostgreSQL</span>
                     <span class="skill-tag">Git</span>
                 </div>
             </div>
@@ -179,45 +194,53 @@
     <div class="project-card">
         <div class="project-header">
             <h3 data-i18n="project_4_title">Multimodal Emotion Recognition System</h3>
-            <span class="project-date" data-i18n="project_4_date">Penelitian Tugas Akhir (Ongoing)</span>
+            <span class="project-date" data-i18n="project_4_date">Penelitian Tugas Akhir (Februari 2026 - Sekarang)</span>
         </div>
         <div class="project-category" data-i18n="project_4_category">AI Research & Data Analysis</div>
         <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">Pandas</span>
-            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">MemoCMT</span>
             <span class="tech-tag">MELD Dataset</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">Transformers (BERT)</span>
+            <span class="tech-tag">TorchAudio</span>
+            <span class="tech-tag">TorchVision</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Scikit-learn</span>
         </div>
         <ul class="project-description">
-            <li data-i18n="project_4_desc_1">Melakukan Exploratory Data Analysis (EDA) secara komprehensif pada dataset multimodal MELD untuk menganalisis distribusi fitur audio, teks, dan visual</li>
+            <li data-i18n="project_4_desc_1">Melakukan eksplorasi data secara komprehensif pada dataset multimodal MELD untuk menganalisis distribusi fitur audio, teks, dan visual</li>
             <li data-i18n="project_4_desc_2">Mengkaji dan mengimplementasikan arsitektur baseline MemoCMT untuk mengoptimalkan penyilangan (cross-modal) representasi fitur audio dan teks</li>
-            <li data-i18n="project_4_desc_3">Merancang integrasi sistem dynamic gating fusion untuk pemrosesan data visual, bertujuan menghasilkan model klasifikasi yang ringan (lightweight) dan memiliki ketahanan tinggi terhadap gangguan (noise-robust)</li>
+            <li data-i18n="project_4_desc_3">Merancang integrasi sistem dynamic gating fusion untuk pemrosesan data visual, bertujuan menghasilkan model klasifikasi yang ringan dan memiliki ketahanan tinggi terhadap gangguan</li>
         </ul>
     </div>
     <!-- Computer Vision -->
     <div class="project-card">
         <div class="project-header">
-            <h3 data-i18n="project_5_title">Klasifikasi Spesies Alien Invasif</h3>
-            <span class="project-date" data-i18n="project_5_date">Kolaborasi BRIN Yogyakarta (Ongoing)</span>
+            <h3 data-i18n="project_5_title">Klasifikasi Spesies Alien Invasif Taman Baluran</h3>
+            <span class="project-date" data-i18n="project_5_date">Februari 2026 - Sekarang</span>
         </div>
         <div class="project-category" data-i18n="project_5_category">Computer Vision & Object Detection</div>
         <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">YOLO</span>
             <span class="tech-tag">CVAT</span>
-            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Ultralytics YOLO</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Matplotlib</span>
+            <span class="tech-tag">YAML</span>
         </div>
         <ul class="project-description">
             <li data-i18n="project_5_desc_1">Mengakuisisi dan memproses dataset gambar spesies alien invasif berdasarkan spesifikasi kebutuhan ekologis dari BRIN Yogyakarta</li>
-            <li data-i18n="project_5_desc_2">Melakukan anotasi presisi pada ratusan data gambar menggunakan perangkat lunak computer vision (CVAT) untuk membangun dataset training yang berkualitas</li>
-            <li data-i18n="project_5_desc_3">Melatih dan memvalidasi model Object Detection (arsitektur YOLO) untuk mengidentifikasi dan mengklasifikasikan spesies invasif secara akurat guna mendukung pemantauan keanekaragaman hayati</li>
+            <li data-i18n="project_5_desc_2">Melakukan anotasi presisi pada ratusan data gambar menggunakan perangkat lunak computer vision untuk membangun dataset training yang berkualitas</li>
+            <li data-i18n="project_5_desc_3">Melatih dan memvalidasi model object detection untuk mengidentifikasi dan mengklasifikasikan spesies invasif secara akurat guna mendukung pemantauan keanekaragaman hayati</li>
         </ul>
     </div>
     <!-- Game Development -->
     <div class="project-card">
         <div class="project-header">
             <h3 data-i18n="project_6_title">Memories of You - Expert System Game Engine</h3>
-            <span class="project-date" data-i18n="project_6_date">Game Logic & Development</span>
+            <span class="project-date" data-i18n="project_6_date">Desember 2026 - Sekarang</span>
         </div>
         <div class="project-category" data-i18n="project_6_category">Game Development & Expert System</div>
         <div class="project-tech">
@@ -226,8 +249,8 @@
             <span class="tech-tag">Rule-Based System</span>
         </div>
         <ul class="project-description">
-            <li data-i18n="project_6_desc_1">Merancang dan mengimplementasikan Sistem Pakar (Expert System) sebagai core logic engine untuk mengatur sistem pengambilan keputusan dan progresi level pemain secara dinamis</li>
-            <li data-i18n="project_6_desc_2">Membangun algoritma berbasis aturan (rule-based) yang menganalisis interaksi pemain untuk mengklasifikasikan status emosional mereka ke dalam metrik psikologis 5 Stages of Grief</li>
+            <li data-i18n="project_6_desc_1">Merancang dan mengimplementasikan sistem pakar sebagai core logic engine untuk mengatur sistem pengambilan keputusan dan progresi level pemain secara dinamis</li>
+            <li data-i18n="project_6_desc_2">Membangun algoritma berbasis aturan yang menganalisis interaksi pemain untuk mengklasifikasikan status emosional mereka ke dalam metrik psikologis 5 Stages of Grief</li>
         </ul>
     </div>
 
@@ -235,7 +258,7 @@
     <div class="project-card">
         <div class="project-header">
             <h3 data-i18n="project_3_title">Predictive Maintenance Analysis</h3>
-            <span class="project-date" data-i18n="project_3_date">Nov 2025 – Des 2025</span>
+            <span class="project-date" data-i18n="project_3_date">November 2025 – Desember 2025</span>
         </div>
         <div class="project-category" data-i18n="project_3_category">Machine Learning Project</div>
         <div class="project-tech">
@@ -254,7 +277,7 @@
     <div class="project-card">
         <div class="project-header">
             <h3 data-i18n="project_1_title">IT Performance Analytics Dashboard (PT Pelindo) </h3>
-            <span class="project-date" data-i18n="project_1_date">Sep 2025 – Des 2025</span>
+            <span class="project-date" data-i18n="project_1_date">September 2025 – Desember 2025</span>
         </div>
         <div class="project-category" data-i18n="project_1_category">Data Analytics & Dashboard Development</div>
         <div class="project-tech">
@@ -274,19 +297,24 @@
     <div class="project-card">
         <div class="project-header">
             <h3 data-i18n="project_2_title">Sistem Pakar Rekomendasi Laptop</h3>
-            <span class="project-date" data-i18n="project_2_date">Sep 2025 – Des 2025</span>
+            <span class="project-date" data-i18n="project_2_date">September 2025 – Desember 2025</span>
         </div>
         <div class="project-category" data-i18n="project_2_category">Decision Support System</div>
         <div class="project-tech">
             <span class="tech-tag">Python</span>
             <span class="tech-tag">Flask</span>
             <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">NumPy</span>
             <span class="tech-tag">Selenium</span>
+            <span class="tech-tag">BeautifulSoup</span>
+            <span class="tech-tag">Bootstrap 5</span>
+            <span class="tech-tag">SAW Algorithm</span>
+            <span class="tech-tag">Rule-Based System</span>
         </div>
         <ul class="project-description">
-            <li data-i18n="project_2_desc_1">Mengembangkan sistem pendukung keputusan berbasis web dengan metode Hybrid (Forward Chaining untuk rule-based filtering dan SAW untuk weighted ranking) guna menerjemahkan kebutuhan pengguna menjadi rekomendasi spesifikasi laptop yang terukur</li>
+            <li data-i18n="project_2_desc_1">Mengembangkan sistem pendukung keputusan berbasis web dengan metode hybrid (Forward Chaining untuk rule-based filtering dan SAW untuk weighted ranking) guna menerjemahkan kebutuhan pengguna menjadi rekomendasi spesifikasi laptop yang terukur</li>
             <li data-i18n="project_2_desc_2">Mengotomatisasi pengumpulan dan pembaruan dataset melalui web scraping terjadwal, serta melakukan data cleaning dan pembentukan matriks keputusan menggunakan Pandas</li>
-            <li data-i18n="project_2_desc_3">Mengimplementasikan fitur Explainable AI dan validasi anggaran pengguna untuk meningkatkan transparansi rekomendasi, serta mendeploy sistem agar dapat digunakan secara interaktif</li>
+            <li data-i18n="project_2_desc_3">Mengimplementasikan fitur explainable AI dan validasi anggaran pengguna untuk meningkatkan transparansi rekomendasi, serta mendeploy sistem agar dapat digunakan secara interaktif</li>
         </ul>
     </div>
 
@@ -295,31 +323,48 @@
     <div class="project-card">
         <div class="project-header">
             <h3 data-i18n="project_8_title">XenoTimes - News Credibility Verification Platform</h3>
-            <span class="project-date" data-i18n="project_8_date">Backend & AI Integration</span>
+            <span class="project-date" data-i18n="project_8_date">September 2025 – Desember 2025</span>
         </div>
         <div class="project-category" data-i18n="project_8_category">Backend Development & NLP Integration</div>
         <div class="project-tech">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Postman</span>
+            <span class="tech-tag">Prisma ORM</span>
+            <span class="tech-tag">Supabase</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Python Flask</span>
+            <span class="tech-tag">Playwright</span>
+            <span class="tech-tag">TailwindCSS</span>
+            <span class="tech-tag">Vercel</span>
         </div>
         <ul class="project-description">
-            <li data-i18n="project_8_desc_1">Membangun infrastruktur backend terintegrasi Artificial Intelligence untuk menganalisis dan memverifikasi kredibilitas tautan berita secara otomatis (identifikasi misinformasi/hoaks)</li>
-            <li data-i18n="project_8_desc_2">Mengembangkan API yang memproses hasil prediksi model AI untuk menyajikan metrik persentase kepercayaan berita, dilengkapi dengan penjabaran sebab-akibat (XAI) guna meningkatkan transparansi bagi pengguna</li>
+            <li data-i18n="project_8_desc_1">Mengelola database menggunakan Supabase PostgreSQL dan Prisma ORM untuk autentikasi serta penyimpanan data aplikasi</li>
+            <li data-i18n="project_8_desc_2">Mengimplementasikan web scraping otomatis menggunakan Playwright untuk mengekstraksi konten berita dari berbagai website</li>
+            <li data-i18n="project_8_desc_3">Melakukan pengujian endpoint API menggunakan Postman untuk memastikan stabilitas dan akurasi response backend</li>
         </ul>
     </div>
         <!-- Mobile App Backend -->
     <div class="project-card">
         <div class="project-header">
             <h3 data-i18n="project_7_title">Teman Tumbuh - Android App</h3>
-            <span class="project-date" data-i18n="project_7_date">Backend Development</span>
+            <span class="project-date" data-i18n="project_7_date">Maret 2025 – Juni 2025</span>
         </div>
         <div class="project-category" data-i18n="project_7_category">Backend API & Database Management</div>
         <div class="project-tech">
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">RESTful API</span>
-            <span class="tech-tag">Database</span>
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Postman</span>
+            <span class="tech-tag">Prisma ORM</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">TailwindCSS</span>
         </div>
         <ul class="project-description">
-            <li data-i18n="project_7_desc_1">Mengembangkan arsitektur backend untuk aplikasi Android yang berfokus pada kalkulasi nutrisi anak guna pencegahan stunting</li>
-            <li data-i18n="project_7_desc_2">Membangun RESTful API dan sistem database untuk memproses metrik kesehatan pengguna, serta merancang logika komputasi untuk menghasilkan rekomendasi asupan makanan harian secara personal</li>
+            <li data-i18n="project_7_desc_1">Mengembangkan backend aplikasi monitoring nutrisi anak untuk mendukung pengelolaan data kesehatan dan rekomendasi makanan harian</li>
+            <li data-i18n="project_7_desc_2">Membangun dan mengelola REST API menggunakan Next.js dan Prisma ORM untuk autentikasi, pengolahan data pengguna, serta integrasi database PostgreSQL</li>
+            <li data-i18n="project_7_desc_3">Melakukan pengujian endpoint API menggunakan Postman serta mengimplementasikan fitur login, register, logout, dan manajemen data aplikasi</li>
         </ul>
     </div>
 </section>
@@ -404,11 +449,76 @@
     <h2 data-i18n="gallery_title">Gallery</h2>
     <div class="gallery">
         <div class="gallery-item">
-            <img src="assets/images/photo1.jpg" alt="">
-            <h4>Stay tune!</h4>
-            <p>for more updates</p>
+            <div class="gallery-image-container">
+                <img src="assets/images/lab_mci.png" alt="Information Intelligent Management Laboratory">
+                
+            </div>
+            <div class="gallery-content">
+                <h4>Laboratory Administrator</h4>
+                <p class="gallery-org">Information Intelligent Management Lab</p>
+                <p class="gallery-period">Jun 2025 - Present</p>
+            </div>
         </div>
-    </div>
+
+        <div class="gallery-item">
+            <div class="gallery-image-container">
+                <img src="assets/images/pelindo.jpeg" alt="PT. Pelabuhan Indonesia">
+                
+            </div>
+            <div class="gallery-content">
+                <h4>Data Analyst Internship</h4>
+                <p class="gallery-org">PT. Pelabuhan Indonesia (Persero)</p>
+                <p class="gallery-period">Sep 2025 - Dec 2025</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <div class="gallery-image-container">
+                <img src="assets/images/hmtc_ea.png" alt="HMTC External Bureau">
+                
+            </div>
+            <div class="gallery-content">
+                <h4>Head of External Bureau</h4>
+                <p class="gallery-org">Himpunan Mahasiswa Teknik Computer-Informatika</p>
+                <p class="gallery-period">Jan 2025 - Dec 2025</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <div class="gallery-image-container">
+                <img src="assets/images/nlc.png" alt="Schematics ITS">
+                
+            </div>
+            <div class="gallery-content">
+                <h4>Expert Staff - National Logic Competition</h4>
+                <p class="gallery-org">Schematics ITS</p>
+                <p class="gallery-period">Jan 2025 - Nov 2025</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <div class="gallery-image-container">
+                <img src="assets/images/inclenation.jpg" alt="BEM FTEIC ITS">
+                
+            </div>
+            <div class="gallery-content">
+                <h4>Head of Opening Subdivision</h4>
+                <p class="gallery-org">BEM FTEIC ITS - Inclenation</p>
+                <p class="gallery-period">Apr 2025 - Aug 2025</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <div class="gallery-image-container">
+                <img src="assets/images/gerigi.jpg" alt="GERIGI ITS Data Management">
+                
+            </div>
+            <div class="gallery-content">
+                <h4>Staff of Data Management</h4>
+                <p class="gallery-org">GERIGI ITS 2024</p>
+                <p class="gallery-period">Jul 2024 - Aug 2024</p>
+            </div>
+        </div>
 </section>
 
 <footer>

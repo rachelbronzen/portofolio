@@ -1,12 +1,9 @@
-// Language Management
 let currentLanguage = localStorage.getItem('language') || 'en';
 
-// Initialize language on page load
 document.addEventListener('DOMContentLoaded', function() {
     setLanguage(currentLanguage);
     updateLanguageSwitcher();
     
-    // Add click handler to language switcher button
     const switcher = document.getElementById('language-switcher');
     if (switcher) {
         switcher.addEventListener('click', function(e) {
@@ -16,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Add click handlers to dropdown items
     const dropdownItems = document.querySelectorAll('.dropdown-item');
     dropdownItems.forEach(item => {
         item.addEventListener('click', function() {
@@ -25,8 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('.language-dropdown').classList.remove('open');
         });
     });
-    
-    // Close dropdown when clicking outside
+
     document.addEventListener('click', function(e) {
         const dropdown = document.querySelector('.language-dropdown');
         if (!dropdown.contains(e.target)) {
@@ -35,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Set language
 function setLanguage(lang) {
     currentLanguage = lang;
     localStorage.setItem('language', lang);
@@ -43,11 +37,9 @@ function setLanguage(lang) {
     updateLanguageSwitcher();
 }
 
-// Update all content based on current language
 function updateContent() {
     const t = translations[currentLanguage];
     
-    // Update navigation
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (t[key]) {
@@ -55,7 +47,6 @@ function updateContent() {
         }
     });
     
-    // Update HTML content
     document.querySelectorAll('[data-i18n-html]').forEach(element => {
         const key = element.getAttribute('data-i18n-html');
         if (t[key]) {
@@ -64,11 +55,9 @@ function updateContent() {
     });
 }
 
-// Update language switcher button
 function updateLanguageSwitcher() {
     const switcher = document.getElementById('language-switcher');
     if (switcher) {
-        // Update button text based on current language
         const buttonText = currentLanguage === 'en' ? 'Language' : 'Bahasa';
         switcher.textContent = buttonText;
         switcher.classList.remove('active-en', 'active-id');
@@ -76,7 +65,6 @@ function updateLanguageSwitcher() {
     }
 }
 
-// Smooth scroll for navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();

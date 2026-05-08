@@ -5,7 +5,6 @@ body {
     color: #333;
 }
 
-/* NAVBAR */
 nav {
     display: flex;
     justify-content: space-between;
@@ -70,7 +69,6 @@ nav a:hover {
     box-shadow: 0 4px 10px rgba(192, 90, 111, 0.2);
 }
 
-/* Language Dropdown */
 .language-dropdown {
     position: relative;
 }
@@ -121,13 +119,12 @@ nav a:hover {
     font-weight: 600;
 }
 
-/* HERO */
 .hero {
     text-align: center;
     padding: 80px;
     background-color: #fff0f5;
 }
-/* PERSONAL INTRODUCTION */
+
 .personal-intro {
     background-color: #fff0f5;
 }
@@ -164,6 +161,34 @@ nav a:hover {
     color: #666;
     font-style: italic;
     margin-top: 15px;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #ffe4e1 0%, #ffcccc 100%);
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #ffb3bf;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.contact-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(192, 90, 111, 0.15);
+    background: linear-gradient(135deg, #ffcccc 0%, #ffb3bf 100%);
 }
 /* SKILLS */
 .skills-category {
@@ -217,7 +242,7 @@ nav a:hover {
     background: linear-gradient(135deg, #ffcccc 0%, #ffb3bf 100%);
     transform: translateY(-2px);
 }
-/* PROJECTS */
+
 .project-card {
     background: linear-gradient(135deg, #ffffff 0%, #fff8f9 100%);
     padding: 30px;
@@ -448,12 +473,10 @@ nav a:hover {
     color: #2874a6;
 }
 
-/* SECTION */
 section {
     padding: 40px;
 }
 
-/* CARDS */
 .card-container {
     display: flex;
     gap: 20px;
@@ -473,23 +496,131 @@ section {
     transform: translateY(-5px);
 }
 
-/* GALLERY */
 .gallery {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1400px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 }
 
 .gallery-item {
-    width: 200px;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(192, 90, 111, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.gallery img {
+.gallery-item:hover {
+    box-shadow: 0 15px 40px rgba(192, 90, 111, 0.2);
+    transform: translateY(-12px) scale(1.02);
+}
+
+.gallery-image-container {
+    position: relative;
     width: 100%;
-    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ffe4e1 0%, #ffcccc 100%);
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* FOOTER */
+.gallery-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.gallery-item:hover .gallery-image-container img {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(192, 90, 111, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+.gallery-content {
+    padding: 16px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item h4 {
+    margin: 0 0 8px 0;
+    color: #c05a6f;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.gallery-org {
+    margin: 4px 0;
+    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.gallery-period {
+    margin: 6px 0 0 0;
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+}
+
 footer {
     text-align: center;
     padding: 20px;
